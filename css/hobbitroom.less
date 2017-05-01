@@ -1,0 +1,137 @@
+div {
+	position: absolute;
+}
+*::after, *::before {
+	content: "";
+	position: absolute;
+}
+#hobbitroom01 {
+	left: 50%;
+	transform: translateX(-50%);
+	top: 100px;
+}
+.hobbitroom {
+	position: relative;
+	width: 1200px;
+	height: 500px;
+}
+.hobbitroom::before {
+	left: 0;
+	top: 100%;
+	width: 100%;
+	height: 30%;
+	box-sizing: border-box;
+	border: 10px solid;
+	border-top: 0;
+	border-image: linear-gradient(to right, #f7f7f7, #f7f7f7 42%, transparent 42%, transparent 58%, #f7f7f7 58%, #f7f7f7) 1;
+}
+.hobbitroom::after {
+	width: 40%;
+	height: 9%;
+	background: linear-gradient(to right, #f7f7f7 10px, transparent 10px, transparent 20px, #f7f7f7 20px, #f7f7f7 30px, transparent 30px, transparent 40px, #f7f7f7 40px, #f7f7f7 50px, transparent 50px, transparent 60px, #f7f7f7 60px, #f7f7f7 70px, transparent 70px, transparent 80px, #f7f7f7 80px, #f7f7f7 90px, transparent 90px, transparent 100px, #f7f7f7 100px, #f7f7f7 110px, transparent 110px, transparent 120px, #f7f7f7 120px, #f7f7f7 130px, transparent 130px, transparent 140px, #f7f7f7 140px, #f7f7f7 150px, transparent 150px, transparent 160px, #f7f7f7 160px, #f7f7f7 170px, transparent 170px, transparent 180px, #f7f7f7 180px, #f7f7f7 190px, transparent 190px, transparent 200px, #f7f7f7 200px, #f7f7f7 210px, transparent 210px, transparent 220px, #f7f7f7 220px, #f7f7f7 230px, transparent 230px, transparent 240px, #f7f7f7 240px, #f7f7f7 250px, transparent 250px, transparent 260px, #f7f7f7 260px, #f7f7f7 270px, transparent 270px, transparent 280px, #f7f7f7 280px, #f7f7f7 290px, transparent 290px, transparent 300px, #f7f7f7 300px, #f7f7f7 310px, transparent 310px, transparent 320px, #f7f7f7 320px, #f7f7f7 330px, transparent 330px, transparent 340px, #f7f7f7 340px, #f7f7f7 350px, transparent 350px, transparent 360px, #f7f7f7 360px, #f7f7f7 370px, transparent 370px, transparent 380px, #f7f7f7 380px, #f7f7f7 390px, transparent 390px, transparent 400px, #f7f7f7 400px, #f7f7f7 410px, transparent 410px, transparent 420px, #f7f7f7 420px, #f7f7f7 430px, transparent 430px, transparent 440px, #f7f7f7 440px, #f7f7f7 450px, transparent 450px, transparent 460px, #f7f7f7 460px, #f7f7f7 470px, transparent 470px);
+	left: 1%;
+	top: 124%;
+}
+.hobbit-wall {
+	width: 100%;
+	height: 100%;
+	background: #FFCC33;
+	box-shadow: 0 0 10px #122B40;
+	border-top-left-radius: 50% 100%;
+	border-top-right-radius: 50% 100%;
+	border: 20px solid #00AA88;
+	border-bottom: 0;
+}
+.hobbitroom>.hobbit-wall::before {
+	content: "";
+	position: absolute;
+	left: 180px;
+	top: 40%;
+	width: 160px;
+	height: 160px;
+	border-radius: 100%;
+	background: #BB7A56;
+	border: 10px solid #AE6A46;
+	background: #F0EAD8;
+	background-image: linear-gradient(to right, transparent 47%, #AE6A46 47%, #AE6A46 53%, transparent 53%), linear-gradient(to bottom, transparent 47%, #AE6A46 47%, #AE6A46 53%, transparent 53%);
+	animation: smokey 4s linear infinite;
+}
+.hobbitroom>.hobbit-wall::after {
+	content: "";
+	position: absolute;
+	right: 180px;
+	top: 40%;
+	width: 160px;
+	height: 160px;
+	border-radius: 100%;
+	background: #BB7A56;
+	border: 10px solid #AE6A46;
+	background: #F0EAD8;
+	background-image: linear-gradient(to right, transparent 47%, #AE6A46 47%, #AE6A46 53%, transparent 53%), linear-gradient(to bottom, transparent 47%, #AE6A46 47%, #AE6A46 53%, transparent 53%);
+}
+@keyframes smokey {
+	0% {
+		box-shadow: -150px -260px 0 -70px rgba(0, 0, 0, .2);
+	}
+	25% {
+		box-shadow: -155px -300px 0 -60px rgba(0, 0, 0, .3);
+	}
+	50% {
+		box-shadow: -160px -340px 0 -50px rgba(0, 0, 0, .2);
+	}
+	75 {
+		box-shadow: -160px -380px 0 -40px rgba(0, 0, 0, .1);
+	}
+	100% {
+		box-shadow: -160px -420px 0 -30px rgba(0, 0, 0, .05);
+	}
+}
+.hobbit-door {
+	left: 50%;
+	top: 40%;
+	margin-left: -125px;
+	margin-top:;
+	width: 250px;
+	height: 250px;
+	background-color: #825034;
+	background-image: linear-gradient(to right, transparent 45%, #bb7a56 45%, #bb7a56 55%, transparent 55%), linear-gradient(76deg, transparent 45%, #ae6a46 45%, #ae6a46 55%, transparent 55%), linear-gradient(-76deg, transparent 45%, #b7714b 45%, #b7714b 55%, transparent 55%), linear-gradient(60deg, transparent 45%, #bb7a56 45%, #bb7a56 55%, transparent 55%), linear-gradient(-60deg, transparent 45%, #c48b6c 45%, #c48b6c 55%, transparent 55%), linear-gradient(42deg, transparent 45%, #ca977b 45%, #ca977b 55%, transparent 55%), linear-gradient(-42deg, transparent 45%, #bb7a56 45%, #bb7a56 55%, transparent 55%), linear-gradient(-24deg, transparent 45%, #ca977b 45%, #ca977b 55%, transparent 55%), linear-gradient(25deg, transparent 45%, #985d3d 45%, #985d3d 55%, transparent 55%), linear-gradient(-9deg, transparent 45%, #c48b6c 45%, #c48b6c 55%, transparent 55%), linear-gradient(7deg, transparent 44%, #bb7a56 44%, #bb7a56 55%, transparent 55%);
+	border-radius: 50%;
+	box-shadow: 0 5px #985d3d;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 190px;
+		height: 190px;
+		margin-left: -95px;
+		margin-top: -95px;
+		top: 50%;
+		left: 50%;
+		background: #468e60;
+		background-image: repeating-linear-gradient(to right, transparent, transparent 22px, #26603b 22px, #26603b 24px, #73b38a 24px, #73b38a 25px);
+		border-radius: 50%;
+		box-shadow: inset 0 5px 0 #6c422c, inset 0 12px 5px rgba(0, 0, 0, 0.3), inset 0 -4px 3px rgba(0, 0, 0, 0.2);
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		width: 25px;
+		height: 25px;
+		margin-left: -12.5px;
+		margin-top: -12.5px;
+		top: 50%;
+		left: 50%;
+		background: #ffeb8f;
+		border-radius: 50%;
+		box-shadow: inset 0 -6px 5px rgba(111, 74, 24, 0.5), 0 5px 3px rgba(0, 0, 0, 0.4);
+	}
+}
+.hobbit-chimney {
+	left: 10%;
+	top: 20px;
+	width: 100px;
+	height: 180px;
+	background: linear-gradient(to bottom, #666 50px, transparent 50px, transparent 65px, #777 65px), linear-gradient(to right, transparent 20px, #777 20px, #777 28px, transparent 28px, transparent 70px, #777 70px, #777 78px, transparent 78px);
+	border-top-left-radius: 50% 50px;
+	border-top-right-radius: 50% 50px;
+}

@@ -1,0 +1,126 @@
+div {
+	position: absolute;
+}
+#community03 {
+	left: 100px;
+	top: 100px;
+}
+
+.community {
+	width: 1000px;
+	height: 600px;
+	background: #00AA88;
+	box-shadow: 0 0 10px #122B40;
+}
+
+.community::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: 50px solid;
+	left: -50px;
+	top: -50px;
+	border-image: url(../img/hedgeforcommunity.png) 29.5% 34% 34% 29.5% round;
+}
+.community::after {
+	width: 110px;
+	height: 80px;
+	left: 50%;
+	top: 101%;
+	margin-left: -52px;
+	background: #ccc;
+}
+
+/*.community::after{
+content: "";position: absolute;left: 10px;top: -40px;
+width: 10px;height: 40px;background: #F7F7F7;border-radius: 40% 40% 0 0;
+box-shadow: 20px 0 0 #F7F7F7,40px 0 0 #F7F7F7,60px 0 0 #F7F7F7,80px 0 0 #F7F7F7,100px 0 0 #F7F7F7,120px 0 0 #F7F7F7,140px 0 0 #F7F7F7,160px 0 0 #F7F7F7,180px 0 0 #F7F7F7,200px 0 0 #F7F7F7,220px 0 0 #F7F7F7,240px 0 0 #F7F7F7,260px 0 0 #F7F7F7,280px 0 0 #F7F7F7,300px 0 0 #F7F7F7,320px 0 0 #F7F7F7,340px 0 0 #F7F7F7;
+}*/
+.community>.title {
+	right: 0;
+	top: -40px;
+	line-height: 40px;
+	font-family: "微软雅黑";
+	font-size: 2em;
+	color: #999;
+}
+.mario-mushroom {
+	position: relative;
+	float: left;
+	margin: 20px 0 30px 20px;
+	width: 170px;
+	height: 140px;
+	border-radius: 140px 140px 80px 80px;
+	background-image: radial-gradient(circle at 50% 120%, rgba(0, 0, 0, 0.7) 23%, rgba(0, 0, 0, 0) 48%), linear-gradient(30deg, rgba(0, 0, 0, 0.4) 10%, rgba(0, 0, 0, 0) 20%), radial-gradient(circle at 50% 33%, #f8f6f7 32%, rgba(255, 255, 255, 0) 32%), radial-gradient(circle at -13% 55%, #f8f6f7 20%, rgba(255, 255, 255, 0) 20%), radial-gradient(circle at 113% 55%, #f8f6f7 20%, rgba(255, 255, 255, 0) 20%), linear-gradient(to bottom, #ef0015 20%, #b2000c 100%);
+	cursor: pointer;
+}
+.mario-mushroom:before {
+	content: "";
+	position: absolute;
+	width: 100px;
+	height: 66px;
+	left: 35px;
+	bottom: -30px;
+	background: #f1d38b;
+	border-top-right-radius: 180px 100px;
+	border-top-left-radius: 180px 100px;
+	border-bottom-right-radius: 140px 100px;
+	border-bottom-left-radius: 140px 100px;
+	border-top: 1px solid #53170f;
+	box-shadow: inset 0 15px 10px rgba(0, 0, 0, 0.25), inset -12px -5px 10px rgba(0, 0, 0, 0.2), inset 5px -2px 10px rgba(0, 0, 0, 0.2);
+}
+.mario-mushroom:after {
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 25px;
+	top: 120px;
+	left: 58px;
+	background: rgba(0, 0, 0, 0);
+	box-shadow: 8px 0 #312114, 38px 0 #312114;
+	border-radius: 40%;
+}
+
+.woodroom {
+	position: relative;
+	margin: 220px;
+	width: 300px;
+	height: 220px;
+	background: #c2c2c2;
+	border-top: 70px solid;
+	border-left: 50px solid;
+	border-right: 170px solid;
+	border-bottom: 70px solid;
+	border-color: #710909;
+	border-radius: 10px;
+	background-image: linear-gradient(to bottom, #6c4222 0%, #6c4222 10%, transparent 10%, transparent 45%, #6c4222 45%, #6c4222 55%, transparent 55%, transparent 90%, #6c4222 90%), linear-gradient(to right, #6c4222 8%, transparent 8%, transparent 47%, #6c4222 47%, #6c4222 54%, transparent 54%, transparent 92%, #6c4222 92%);
+	box-shadow: 75px 110px 0px -98px #737373, 73px 125px 0px -98px #727F8C, 71px 140px 0px -98px #737373, 69px 155px 0px -98px #727F8C;
+}
+.woodroom::before {
+	content: "";
+	position: absolute;
+	left: 130px;
+	top: 10px;
+	height: 110px;
+	width: 80px;
+	background: #6C422C;
+	border-radius: 40% 40% 0 0;
+	border: 5px solid rgba(0, 0, 0, .3);
+	background-image: radial-gradient(circle at 85% 50%, #6c4222 7px, rgba(0, 0, 0, 0) 7px), linear-gradient(to right, transparent 2%, #b7714b 2%, #b7714b 10%, transparent 10%, transparent 13%, #c48b6c 13%, #c48b6c 25%, transparent 25%, transparent 27%, #bb7a56 27%, #bb7a56 43%, transparent 43%, transparent 45%, #bb7a56 45%, #bb7a56 55%, transparent 55%, transparent 57%, #b7714b 57%, #b7714b 75%, transparent 75%, transparent 77%, #bb7a56 77%, #bb7a56 88%, transparent 88%, transparent 90%, #b7714b 90%, #b7714b 100%);
+	box-shadow: 50px -200px 0 -35px #666;
+}
+.woodroom::after {
+	content: "";
+	position: absolute;
+	left: -90px;
+	top: -160px;
+	width: 380px;
+	height: 120px;
+	border: 20px solid rgba(255, 255, 255, .82);
+	border-bottom: 0;
+	box-sizing: border-box;
+	border-top-left-radius: 190px 120px;
+	border-top-right-radius: 190px 120px;
+	background: linear-gradient(#6c4222 0%, #bb7a56 15%, #6c4222 15%, #bb7a56 36%, #6c4222 36%, #bb7a56 57%, #6c4222 57%, #bb7a56 78%, #6c4222 78%, #bb7a56 100%);
+}

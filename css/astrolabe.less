@@ -1,0 +1,142 @@
+.center-public {
+	left: 50%;
+	top: 90%;
+	transform: translate(-50%, -50%);
+}
+.center-public {
+	position: absolute;
+	/*box-shadow: 0 0 0px 5px rgba(128,0,255,.9),0 0 0px 10px rgba(0,0,255,.5),0 0 0px 15px rgba(0,255,255,.5),0 0 0px 20px rgba(0,255,0,.5),0 0 0px 25px rgba(255,255,0,.5),0 0 0px 30px rgba(255,128,0,.5),0 0 0px 35px rgba(255,0,0,.5),0 0 40px 45px rgba(0,0,0,.2);	
+	*/
+	width: 1000px;
+	height: 1000px;
+	box-shadow: 0 0 100px rgba(0, 128, 255, .4);
+	border: 5px solid #333;
+	background: #D2DCF8;
+	background-image: radial-gradient(circle at 95% 50%, #D2DCF8 5%, #222 5%, #222 5.3%, transparent 5.3%), radial-gradient(circle at 5% 50%, #D2DCF8 5%, #222 5%, #222 5.3%, transparent 5.3%), radial-gradient(circle at 50% 95%, #D2DCF8 5%, #222 5%, #222 5.3%, transparent 5.3%), radial-gradient(circle at 50% 5%, #D2DCF8 5%, #222 5%, #222 5.3%, transparent 5.3%), radial-gradient(circle at 82% 50%, transparent 8%, rgba(255, 255, 0, 1) 8%, rgba(255, 255, 0, .5) 8.3%, transparent 8.3%), radial-gradient(circle at 20.6% 50%, transparent 10.8%, rgba(0, 0, 255, .5) 10.8%, rgba(0, 0, 255, .5) 11.1%, transparent 11.1%), radial-gradient(circle at 15.5% 50%, transparent 16%, rgba(0, 0, 255, .5) 16%, rgba(0, 0, 255, .5) 16.3%, transparent 16.3%), radial-gradient(circle at 50% 50%, transparent 37%, #444 37%, #444 37.4%, transparent 37.4%, transparent 40%, #444 40%, #444 40.5%, transparent 40.5%, transparent 61%, #444 61%, #444 61.5%, #eee 61.5%, #eee 64%, #222 64%, #999 65%, #ddd 65%), linear-gradient(15deg, transparent 25%, rgba(255, 255, 255, .4) 25%, rgba(255, 255, 255, .4) 26%, transparent 26%), linear-gradient(45deg, transparent 28%, rgba(255, 255, 255, .4) 28%, rgba(255, 255, 255, .4) 29%, transparent 29%), linear-gradient(75deg, transparent 25%, rgba(255, 255, 255, .4) 25%, rgba(255, 255, 255, .4) 26%, transparent 26%), linear-gradient(105deg, transparent 25%, rgba(255, 255, 255, .4) 25%, rgba(255, 255, 255, .4) 26%, transparent 26%), linear-gradient(135deg, transparent 28%, rgba(255, 255, 255, .4) 28%, rgba(255, 255, 255, .4) 29%, transparent 29%), linear-gradient(165deg, transparent 25%, rgba(255, 255, 255, .4) 25%, rgba(255, 255, 255, .4) 26%, transparent 26%), linear-gradient(195deg, transparent 25%, rgba(255, 255, 255, .4) 25%, rgba(255, 255, 255, .4) 26%, transparent 26%), linear-gradient(225deg, transparent 28%, rgba(255, 255, 255, .4) 28%, rgba(255, 255, 255, .4) 29%, transparent 29%), linear-gradient(255deg, transparent 25%, rgba(255, 255, 255, .4) 25%, rgba(255, 255, 255, .4) 26%, transparent 26%), linear-gradient(285deg, transparent 25%, rgba(255, 255, 255, .4) 25%, rgba(255, 255, 255, .4) 26%, transparent 26%), linear-gradient(315deg, transparent 28%, rgba(255, 255, 255, .4) 28%, rgba(255, 255, 255, .4) 29%, transparent 29%), linear-gradient(345deg, transparent 25%, rgba(255, 255, 255, .5) 25%, rgba(255, 255, 255, .5) 26%, transparent 26%);
+	border-radius: 100%;
+	perspective: 350;
+	-webkit-perspective: 350;
+}
+
+.center-public>.star-five {
+	position: absolute;
+	width: 560px;
+	height: 560px;
+	border-radius: 100%;
+	border: 1px solid #fff;
+	left: 50%;
+	top: 50%;
+	margin-left: -280px;
+	margin-top: -280px;
+	background: linear-gradient(36deg, transparent 38%, rgba(0, 0, 0, .2) 38%, rgba(0, 0, 0, .2)38.7%, transparent 38.7%), linear-gradient(108deg, transparent 38%, rgba(0, 0, 0, .2) 38%, rgba(0, 0, 0, .2) 38.7%, transparent 38.7%), linear-gradient(180deg, transparent 36%, rgba(0, 0, 0, .2) 36%, rgba(0, 0, 0, .2) 37%, transparent 37%), linear-gradient(252deg, transparent 38%, rgba(0, 0, 0, .2) 38%, rgba(0, 0, 0, .2) 38.7%, transparent 38.7%), linear-gradient(324deg, transparent 38%, rgba(0, 0, 0, .2) 38%, rgba(0, 0, 0, .2) 38.7%, transparent 38.7%), linear-gradient(0deg, transparent 36%, rgba(255, 255, 255, .4) 36%, rgba(255, 255, 255, .4)37%, transparent 37%), linear-gradient(72deg, transparent 38%, rgba(255, 255, 255, .4) 38%, rgba(255, 255, 255, .4) 38.7%, transparent 38.7%), linear-gradient(144deg, transparent 38%, rgba(255, 255, 255, .4) 38%, rgba(255, 255, 255, .4) 38.7%, transparent 38.7%), linear-gradient(216deg, transparent 38%, rgba(255, 255, 255, .4) 38%, rgba(255, 255, 255, .4) 38.7%, transparent 38.7%), linear-gradient(288deg, transparent 38%, rgba(255, 255, 255, .4) 38%, rgba(255, 255, 255, .2) 38.7%, transparent 38.7%);
+}
+.star-five::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -70px;
+	margin-top: -70px;
+	width: 140px;
+	height: 140px;
+	background: radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, .4));
+	border-radius: 100%;
+	box-shadow: 0 0 20px rgba(255, 255, 255, .4), 0 0 25px rgba(0, 255, 255, .2);
+}
+.center-public>.transport-gate {
+	position: absolute;
+	width: 140px;
+	height: 180px;
+	left: 50%;
+	top: 50%;
+	margin-left: -70px;
+	margin-top: -120px;
+	border-radius:;
+
+	/*background:
+	linear-gradient(to right,rgba(255,255,255,.3) 15%,rgba(255,255,255,.9) 15%,rgba(255,255,255,.8) 19%,rgba(255,255,255,.6) 19%,rgba(255,255,255,.6) 25%,rgba(255,255,255,.4) 25%,rgba(255,255,255,.4) 35%,rgba(255,255,255,.8) 35%,rgba(255,255,255,.5) 49%,rgba(255,255,255,.3) 49%,rgba(255,255,255,.3) 55%),
+	linear-gradient(to right,rgba(255,255,0,.3) 14%,rgba(0,0,0,.2));
+	background: linear-gradient(to right,rgba(255,255,255,.02),rgba(255,255,255,.7) 30%,rgba(255,255,255,.3) 50%,rgba(255,255,255,.7) 70%,rgba(255,255,255,.02));
+	transform: rotateX(105deg);
+	-webkit-transform: rotateX(105deg);*/
+	background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.2), transparent 35%, transparent 45%, rgba(255, 255, 255, .2) 45%, rgba(255, 255, 255, .8) 55%, rgba(255, 255, 255, .3) 60%, transparent 60%);
+	animation: transportgate 5s linear infinite;
+}
+@keyframes transportgate {
+	from {
+		transform: rotateX(130deg) rotateY(0deg);
+	}
+	to {
+		transform: rotateX(130deg) rotateY(360deg);
+	}
+}
+.center-public>p {
+	position: absolute;
+	display: block;
+	width: 10%;
+	height: 10%;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 200px;
+	font-size: 150px;
+	font-family: "楷体";
+}
+.center-public>.east {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -100px;
+	transform: rotate(-90deg);
+}
+.center-public>.west {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -100px;
+	transform: rotate(90deg);
+}
+.center-public>.south {
+	position: absolute;
+	left: 50%;
+	top: 90%;
+	margin-left: -100px;
+}
+.center-public>.north {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin-left: -100px;
+	transform: rotate(180deg);
+}
+.center-public>.constellation {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.constellation>li {
+	position: absolute;
+	display: block;
+	width: 5%;
+	height: 5%;
+}
+.constellation>li>img {
+	width: 100%;
+}
+.constellation>.libra {
+	position: absolute;
+	left: 59%;
+	top: 9%;
+	transform: rotate(15deg);
+}
+.constellation>.cancer {
+	position: absolute;
+	left: 59%;
+	top: 86%;
+	transform: rotate(-15deg);
+}
+.constellation>.aquarius {
+	position: absolute;
+	left: 19%;
+	top: 19%;
+	transform: rotate(-30deg);
+}
