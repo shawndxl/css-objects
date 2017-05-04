@@ -1,6 +1,6 @@
 .center-public {
 	left: 50%;
-	top: 90%;
+	top: 50%;
 	transform: translate(-50%, -50%);
 }
 .center-public {
@@ -71,72 +71,66 @@
 	}
 }
 .center-public>p {
+	@width: 10%;
 	position: absolute;
 	display: block;
-	width: 10%;
-	height: 10%;
+	width: @width;
+	height: @width;
+	top: 50%;
+	left: 50%;
+	margin-left: -5%;
+	margin-top: -5%;
 	border-radius: 100%;
 	text-align: center;
-	line-height: 200px;
-	font-size: 150px;
+	font-size: 5rem;
+	vertical-align: middle;
 	font-family: "楷体";
+
+	&.east {
+		transform: translateX(@width*45) rotate(90deg);
+	}
+	&.west {
+		transform: translateX(-@width*45) rotate(-90deg);
+	}
+	&.south {
+		transform: translateY(@width*45) rotate(180deg);
+	}
+	&.north {
+		transform: translateY(-@width*45) rotate(0deg);
+	}
 }
-.center-public>.east {
-	position: absolute;
-	right: 0;
-	top: 50%;
-	margin-top: -100px;
-	transform: rotate(-90deg);
-}
-.center-public>.west {
-	position: absolute;
-	left: 0;
-	top: 50%;
-	margin-top: -100px;
-	transform: rotate(90deg);
-}
-.center-public>.south {
-	position: absolute;
-	left: 50%;
-	top: 90%;
-	margin-left: -100px;
-}
-.center-public>.north {
-	position: absolute;
-	left: 50%;
-	top: 0;
-	margin-left: -100px;
-	transform: rotate(180deg);
-}
+
+
 .center-public>.constellation {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 }
 .constellation>li {
+	@width: 6%;
 	position: absolute;
 	display: block;
-	width: 5%;
-	height: 5%;
+	width: @width;
+	height: 50%;
+	padding-top: 6.5%;
+	left: 50%;
+	margin-left: @width / -2;
+	transform-origin: center bottom;
+	
+	@degree: 30deg;
+	&:nth-of-type(1) {transform: rotate(@degree * 0 + 15);}
+	&:nth-of-type(2) {transform: rotate(@degree * 1 + 15);}
+	&:nth-of-type(3) {transform: rotate(@degree * 2 + 15);}
+	&:nth-of-type(4) {transform: rotate(@degree * 3 + 15);}
+	&:nth-of-type(5) {transform: rotate(@degree * 4 + 15);}
+	&:nth-of-type(6) {transform: rotate(@degree * 5 + 15);}
+	&:nth-of-type(7) {transform: rotate(@degree * 6 + 15);}
+	&:nth-of-type(8) {transform: rotate(@degree * 7 + 15);}
+	&:nth-of-type(9) {transform: rotate(@degree * 8 + 15);}
+	&:nth-of-type(10) {transform: rotate(@degree * 9 + 15);}
+	&:nth-of-type(11) {transform: rotate(@degree * 10 + 15);}
+	&:nth-of-type(12) {transform: rotate(@degree * 11 + 15);}
 }
 .constellation>li>img {
 	width: 100%;
-}
-.constellation>.libra {
-	position: absolute;
-	left: 59%;
-	top: 9%;
-	transform: rotate(15deg);
-}
-.constellation>.cancer {
-	position: absolute;
-	left: 59%;
-	top: 86%;
-	transform: rotate(-15deg);
-}
-.constellation>.aquarius {
-	position: absolute;
-	left: 19%;
-	top: 19%;
-	transform: rotate(-30deg);
 }
